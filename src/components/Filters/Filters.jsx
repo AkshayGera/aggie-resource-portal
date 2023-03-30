@@ -28,6 +28,7 @@ function Filters(props) {
         <input type="date"/>
       </div>
     </div>
+    //adding comments
   );
 }
 
