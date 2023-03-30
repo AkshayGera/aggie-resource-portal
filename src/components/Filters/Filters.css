@@ -1,0 +1,26 @@
+/* Filters Styles */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 800px;
+  }
+  
+  .gender-filter select {
+    font-size: 1em;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  
+  .date-range-filter input[type="date"] {
+    font-size: 1em;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: 0 10px;
+  }
+  

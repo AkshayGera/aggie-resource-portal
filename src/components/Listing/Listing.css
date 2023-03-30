@@ -1,0 +1,33 @@
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.listing {
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.listing img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.listing h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.listing p {
+  margin-bottom: 5px;
+}
+
+.listing Button{
+  float: right;
+}

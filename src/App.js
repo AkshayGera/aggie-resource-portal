@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import Filters from './components/Filters/Filters';
+import Header from './components/Header/Header';
+import TextPrompt from './components/TextPrompt/TextPrompt';
+import AccListings from './modules/Seeking/Accommodation/AccListings';
+import './style.css';
 
 function App() {
+  const [service, setService] = useState("seeking");
+  const [category, setCategory] = useState("accommodation");
+
+  function handleServiceChange(event){
+    setService(event.target.value);
+  }
+
+  function handleCategoryChange(event){
+    setCategory(event.target.value);
+  }
+  console.log(service + ' ' + category);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Header/>
+      <main>
+       <TextPrompt onServiceChange={handleServiceChange} onCategoryChange={handleCategoryChange}/>
+        {service=='seeking'?category=='accommodation'?<AccListings/>:<></>:<></>}
+        
+      </main>
     </div>
   );
 }
