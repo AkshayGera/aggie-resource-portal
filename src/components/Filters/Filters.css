@@ -8,6 +8,7 @@ body {
 
 .filters {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
@@ -52,9 +53,17 @@ body {
     --base-font-size: 12px;
   }
 
+  .filters{
+    padding-left: 15px;
+  }
+
   .filters label {
     display: block;
     margin-top: 0px;
+  }
+
+  #gender-select{
+    width: 100px;
   }
 
   .filters select, .filters input[type="date"] {

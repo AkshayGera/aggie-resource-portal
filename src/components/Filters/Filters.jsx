@@ -12,7 +12,7 @@ function Filters(props) {
   return (
     <div className="filters">
       <div className="gender-filter">
-        <label htmlFor="gender-select"> Gender:</label>
+        <label htmlFor="gender-select"> Host's Gender</label>
         <select id="gender-select" onChange={onGenderClick}>
           <option value="all">All</option>
           <option value="male">Male</option>

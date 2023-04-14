@@ -1,0 +1,53 @@
+:root {
+    --base-font-size: 16px;
+  }
+  
+  body {
+    font-size: var(--base-font-size);
+  }
+  
+  .filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  
+  .filters h4 {
+    font-size: calc(var(--base-font-size) * 1.0);
+    margin-bottom: 10px;
+  }
+  
+  .filters label {
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: calc(var(--base-font-size) * 0.875);
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-right: 12px;
+  }
+  
+  .filters input[type="checkbox"] {
+    margin-right: 2px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    :root {
+      --base-font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    :root {
+      --base-font-size: 12px;
+    }
+  
+    .filters {
+      padding-left: 15px;
+    }
+  }
+  

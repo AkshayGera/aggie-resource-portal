@@ -18,7 +18,12 @@
   }
 
   .text-prompt select {
-      font-size: 1.3em;
+      font-size: 1.0em;
+  }
+
+  .IAM{
+    font-size:21px;
+    padding-right:5px;
   }
 
 }

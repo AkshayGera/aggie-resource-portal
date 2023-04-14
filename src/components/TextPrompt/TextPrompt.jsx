@@ -5,7 +5,7 @@ function TextPrompt(props) {
   const {onServiceChange,onCategoryChange} = props;
   return (
     <div className="text-prompt">
-      <p>I'm
+      <p><span className='IAM'>I'm</span>
         <select onChange={onServiceChange}>
         <option value="seeking">Seeking</option>
           <option value="providing">Providing</option>
