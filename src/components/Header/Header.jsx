@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
   return (
     <header>
-    <div className="profile">
+    {/* <div className="profile">
       <img src="profile-icon.png" alt="Profile Icon" />
       <div className="profile-dropdown">
         <ul>
@@ -12,7 +12,7 @@ function Header() {
           <li><a href="#">Log Out</a></li>
         </ul>
       </div>
-    </div>
+    </div> */}
     <h1>Aggie Resource Portal</h1>
     <p className="tagline">Aggies Serving Aggies</p>
   </header>

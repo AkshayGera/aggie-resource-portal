@@ -4,6 +4,11 @@ import Header from './components/Header/Header';
 import TextPrompt from './components/TextPrompt/TextPrompt';
 import AccListings from './modules/Seeking/Accommodation/AccListings';
 import './style.css';
+import ProfilePicture from './components/ProfilePicture/ProfilePicture';
+import profileimage from './components/ProfilePicture/profile-picture.png';
+import Blurb from './components/Blurb/Blurb';
+import Navigation from './components/Navigation/Navigation';
+
 
 function App() {
   const [service, setService] = useState("seeking");
@@ -21,6 +26,12 @@ function App() {
     <div>
      <Header/>
       <main>
+        <div className='top'>
+          <Navigation />
+        <Blurb className="topItem"/>
+        {/* <ProfilePicture image={profileimage} className="topItem"/> */}
+          </div>
+        
        <TextPrompt onServiceChange={handleServiceChange} onCategoryChange={handleCategoryChange}/>
         {service=='seeking'?category=='accommodation'?<AccListings/>:<></>:<></>}
         

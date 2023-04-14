@@ -5,13 +5,14 @@ import moment from 'moment';
 
 function Filters(props) {
 
-  const { onGenderClick } = props
+  const { onGenderClick, onDateFromChange, onDateToChange } = props
+  
 
   console.log(moment(new Date()).format("yyyy-MM-dd"));
   return (
     <div className="filters">
       <div className="gender-filter">
-        <label htmlFor="gender-select">Filter by Gender:</label>
+        <label htmlFor="gender-select"> Gender:</label>
         <select id="gender-select" onChange={onGenderClick}>
           <option value="all">All</option>
           <option value="male">Male</option>
@@ -20,12 +21,12 @@ function Filters(props) {
       </div>
       <div>
         <label htmlFor="dateFrom">Date From</label>
-        <input type="date" id="myDate" />
+        <input type="date" id="myDate" onChange={onDateFromChange}/>
         {/* defaultValue={moment(new Date()).format("yyyy-MM-DD")} */}
       </div>
       <div>
         <label htmlFor="dateFrom">Date To</label>
-        <input type="date"/>
+        <input type="date" onChange={onDateToChange}/>
       </div>
     </div>
     //adding comments

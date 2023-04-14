@@ -18,11 +18,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #333;
+    background-color: #034f10;
     color: #fff;
+    flex-wrap: wrap;
 }
 
-.profile img {
+/* .profile img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -51,7 +52,7 @@ header {
 
 .profile-dropdown ul li {
     margin: 5px 0;
-}
+} */
 
 h1 {
     font-size: 2em;
@@ -63,78 +64,62 @@ h1 {
     font-style: italic;
     margin-bottom: 20px;
 }
+  
+  /* .topItem {
+    display: inline;
+    background-color: rgb(255, 255, 255);
+  } */
+
+  .top {
+    font-size: 0; /* remove whitespace between elements */
+  }
+  
+  .topItem {
+    display: inline-block;
+    width: 33.33%; /* optional, to give each item an equal width */
+    font-size: 16px; /* reset font size */
+  }
+  
+  
+
 
 /* Main Styles */
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.text-prompt {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.text-prompt select {
-    font-size: 1.5em;
-    padding: 5px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-}
-
-.filters {
-    margin-top: 30px;
-}
-
-.filters label {
-    font-weight: bold;
-}
-
-.filters select {
-    margin-left: 10px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-}
-
-.filters input[type="date"] {
-    margin-left: 10px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-}
-
-.listings {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.listing {
-    width: 45%;
-    margin-right: 5%;
-    margin-bottom: 20px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.listing img {
     width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    padding: 0 20px;
 }
 
-.listing h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    /* .profile {
+        margin-top: 10px;
+    } */
+
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .listing {
+        width: 100%;
+        margin-right: 0;
+    }
+
+ 
 }
 
-.listing p {
-    margin-bottom: 5px;
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
 }

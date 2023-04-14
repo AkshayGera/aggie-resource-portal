@@ -15,7 +15,7 @@ function Listing({ image, title, description, dateFrom, dateTo, gender,type }) {
       <p>Available From: {moment(dateFrom).format('MMMM Do YYYY')}</p>
       <p>Available Until: {moment(dateTo).format('MMMM Do YYYY')}</p>
       <p>Gender of Provider: {gender}</p>
-      <Button variant="success">Request {type=="acc"?"Stay":"Food"}</Button>
+      <Button className="request" variant="success">Request {type=="acc"?"Stay":"Food"}</Button>
     </div>
   );
 }

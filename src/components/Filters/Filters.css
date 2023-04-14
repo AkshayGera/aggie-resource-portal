@@ -1,26 +1,63 @@
-/* Filters Styles */
+:root {
+  --base-font-size: 16px;
+}
+
+body {
+  font-size: var(--base-font-size);
+}
+
 .filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px auto;
-    max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.filters label {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: calc(var(--base-font-size) * 0.875);
+}
+
+.filters select,
+.filters input[type="date"] {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  flex-grow: 1;
+  min-width: 20%;
+  max-width: 100%;
+  font-size: calc(var(--base-font-size) * 0.875);
+}
+
+.filters > * {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --base-font-size: 14px;
   }
-  
-  .gender-filter select {
-    font-size: 1em;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
+
+  .filters > * {
+    flex: 1 1 33%;
   }
-  
-  .date-range-filter input[type="date"] {
-    font-size: 1em;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    margin: 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --base-font-size: 12px;
   }
-  
+
+  .filters label {
+    display: block;
+    margin-top: 0px;
+  }
+
+  .filters select, .filters input[type="date"] {
+    margin-left: 0;
+  }
+}

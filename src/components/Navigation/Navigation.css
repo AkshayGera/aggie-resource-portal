@@ -1,0 +1,31 @@
+.navigation-panel {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 5px;
+    position: absolute;
+    top: inherit;
+    left: 0;
+  }
+  
+  .home-button,
+  .about-button {
+    background-color: transparent;
+    border: none;
+    color: #4CAF50;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .home-button:hover,
+  .about-button:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+  

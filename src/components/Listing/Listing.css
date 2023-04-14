@@ -1,12 +1,6 @@
-.listings {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
 .listing {
-  width: 45%;
-  margin-right: 5%;
+  width: 30%;
+  margin-right: 3.33%;
   margin-bottom: 20px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -28,6 +22,6 @@
   margin-bottom: 5px;
 }
 
-.listing Button{
-  float: right;
+.request {
+  
 }
