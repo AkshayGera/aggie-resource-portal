@@ -1,0 +1,60 @@
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    position:inherit;
+  }
+  
+  .team-members-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+  }
+  
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .contact-us-container p {
+    margin: 5px 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about-us-container {
+      padding: 20px;
+    }
+
+    .mission{
+        margin-top: 45px;
+    }
+    
+    .team-members-container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    
+    .team-member {
+      padding: 7px;  
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    p{
+        text-align: justify;
+    }
+  }

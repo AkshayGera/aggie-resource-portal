@@ -1,0 +1,125 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #034f10;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+/* .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.profile:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-dropdown ul li {
+    margin: 5px 0;
+} */
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+  
+  /* .topItem {
+    display: inline;
+    background-color: rgb(255, 255, 255);
+  } */
+
+  .top {
+    font-size: 0; /* remove whitespace between elements */
+  }
+  
+  .topItem {
+    display: inline-block;
+    width: 33.33%; /* optional, to give each item an equal width */
+    font-size: 16px; /* reset font size */
+  }
+  
+  
+
+
+/* Main Styles */
+main {
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    /* .profile {
+        margin-top: 10px;
+    } */
+
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .listing {
+        width: 100%;
+        margin-right: 0;
+    }
+
+ 
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+}
