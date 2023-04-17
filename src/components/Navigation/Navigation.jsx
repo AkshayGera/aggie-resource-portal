@@ -14,10 +14,6 @@ function Navigation() {
       to: '/about',
     },
     {
-      label: 'Settings',
-      to: '/settings',
-    },
-    {
       label: 'Help',
       to: '/help',
     },
