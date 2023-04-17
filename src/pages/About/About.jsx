@@ -43,7 +43,7 @@ function About(){
           </div>
           <div className="about-us-container">
       <h2 className="mission">Team Mission Statement</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Our mission is to create platforms that are user-friendly and innovative that strive to address real-world problems faced by students. We aim to communicate effectively and support each other to achieve our shared goal of making a positive impact by embodying “selfless service”. </p>
       
       <h2>Team Members</h2>
       <div className="team-members-container">
@@ -58,7 +58,7 @@ function About(){
       <h2>Why Trust Us?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       
-      <h2>Contact Us</h2>
+      <h3>Contact Us</h3>
       <div className="contact-us-container">
         <p>Email: contact@company.com</p>
         <p>Phone: 123-456-7890</p>
