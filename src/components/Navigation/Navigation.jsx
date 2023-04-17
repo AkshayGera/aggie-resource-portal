@@ -1,15 +1,53 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Navigation.css"; // import css file for styling
-import { Link } from 'react-router-dom';
+import { Link, useLocation, NavLink } from 'react-router-dom';
 
 function Navigation() {
-  return (
-    <div className="navigation-panel">
-      <Link to='/'><button className="home-button">Home</button></Link>
-      <Link to='/about'>
-      <button className="about-button">About</button>
-      </Link>
-    </div>
+ 
+  const navLinks = [
+    {
+      label: 'Home',
+      to: '/',
+    },
+    {
+      label: 'About Us',
+      to: '/about',
+    },
+    {
+      label: 'Settings',
+      to: '/settings',
+    },
+    {
+      label: 'Help',
+      to: '/help',
+    },
+  ];
+  const location = useLocation();
+  const isNavLinkActive = (link) => {
+    return link.to === location.pathname;
+  };
+
+
+  return (<>
+   <nav className="navigation">
+      <ul>
+        {navLinks.map((link) => (
+          <li key={link.to}>
+            <NavLink
+              exact
+              to={link.to}
+              activeClassName="active"
+              className="home-button"
+              isActive={() => isNavLinkActive(link)}
+            >
+              {link.label}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+  </>
   );
 }
 

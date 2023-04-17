@@ -4,28 +4,33 @@ import profileimage from '../../components/ProfilePicture/profile-picture.png';
 import Blurb from '../../components/Blurb/Blurb';
 import Navigation from '../../components/Navigation/Navigation';
 import './About.css';
+import harsh from '../../media/harsh.png';
+import urmika from '../../media/urmika.jpg';
+import akshay from '../../media/akshay.png';
+import ranj from '../../media/ranj.jpg';
+import manaswini from '../../media/manaswini.jpg';
 
 function About(){
     const teamMembers = [
         {
-          name: 'John Doe',
-          image: 'https://via.placeholder.com/150',
+          name: 'Akshay Gera',
+          image: akshay,
         },
         {
-          name: 'Jane Smith',
-          image: 'https://via.placeholder.com/150',
+          name: 'Harsh Chaudhari',
+          image: harsh,
         },
         {
-          name: 'Bob Johnson',
-          image: 'https://via.placeholder.com/150',
+          name: 'Urmika Koul',
+          image: urmika,
         },
         {
-            name: 'Bob Johnson',
-            image: 'https://via.placeholder.com/150',
+            name: 'Ranjani Ramanathan',
+            image: ranj,
           },
           {
-            name: 'Bob Johnson',
-            image: 'https://via.placeholder.com/150',
+            name: 'Manaswini Devabhakthuni',
+            image: manaswini    ,
           },
       ];
     return(<div>
@@ -45,7 +50,7 @@ function About(){
         {teamMembers.map(member => (
           <div key={member.name} className="team-member">
             <img src={member.image} alt={member.name} />
-            <p>{member.name}</p>
+            <p className="member-name">{member.name}</p>
           </div>
         ))}
       </div>

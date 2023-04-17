@@ -12,6 +12,10 @@
     align-items: center;
     margin-top: 20px;
   }
+  img{
+    height: 150px;
+    width: 150px;
+  }
   
   .team-member {
     display: flex;
@@ -41,6 +45,10 @@
 
     .mission{
         margin-top: 45px;
+    }
+
+    .member-name{
+        font-size: smaller;
     }
     
     .team-members-container {
