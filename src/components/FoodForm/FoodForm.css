@@ -1,0 +1,51 @@
+/* FormComponent.css */
+.form-container {
+    margin-top: 10px;
+    margin-left:20px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+  }
+  
+  .form-group {
+    display: contents;
+  }
+  
+  label {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+  input[type="checkbox"] {
+    margin-left: 0.5rem;
+  }
+  
+  .form-group.checkbox-group {
+    grid-column: 1 / -1;
+  }
+  
+  .form-group.actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  span{
+    margin-left: 4px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .form-container{
+        margin-left: 0px;
+    }
+  }
+
+  

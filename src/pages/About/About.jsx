@@ -10,62 +10,62 @@ import akshay from '../../media/akshay.png';
 import ranj from '../../media/ranj.jpg';
 import manaswini from '../../media/manaswini.jpg';
 
-function About(){
-    const teamMembers = [
-        {
-          name: 'Akshay Gera',
-          image: akshay,
-        },
-        {
-          name: 'Harsh Chaudhari',
-          image: harsh,
-        },
-        {
-          name: 'Urmika Koul',
-          image: urmika,
-        },
-        {
-            name: 'Ranjani Ramanathan',
-            image: ranj,
-          },
-          {
-            name: 'Manaswini Devabhakthuni',
-            image: manaswini    ,
-          },
-      ];
-    return(<div>
+function About() {
+  const teamMembers = [
+    {
+      name: 'Akshay Gera',
+      image: akshay,
+    },
+    {
+      name: 'Harsh Chaudhari',
+      image: harsh,
+    },
+    {
+      name: 'Urmika Koul',
+      image: urmika,
+    },
+    {
+      name: 'Ranjani Ramanathan',
+      image: ranj,
+    },
+    {
+      name: 'Manaswini Devabhakthuni',
+      image: manaswini,
+    },
+  ];
+  return (<div>
     <main>
-    <div className='top'>
-          <Navigation />
-          <ProfilePicture image={profileimage} className="topItem"/>
+      <div className='top'>
+        <Navigation />
+        <ProfilePicture image={profileimage} className="topItem" />
         {/* <Blurb className="topItem"/> */}
-       
-          </div>
-          <div className="about-us-container">
-      <h2 className="mission">Team Mission Statement</h2>
-      <p>Our mission is to create platforms that are user-friendly and innovative that strive to address real-world problems faced by students. We aim to communicate effectively and support each other to achieve our shared goal of making a positive impact by embodying “selfless service”. </p>
-      
-      <h2>Team Members</h2>
-      <div className="team-members-container">
-        {teamMembers.map(member => (
-          <div key={member.name} className="team-member">
-            <img src={member.image} alt={member.name} />
-            <p className="member-name">{member.name}</p>
-          </div>
-        ))}
+
       </div>
-      
-      <h2>Why Trust Us?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      
-      <h3>Contact Us</h3>
-      <div className="contact-us-container">
-        <p>Email: contact@company.com</p>
-        <p>Phone: 123-456-7890</p>
+      <div className="about-us-container">
+        <h2 className="mission">Our Mission</h2>
+        <p>Our mission is to create platforms that are user-friendly and innovative that strive to address real-world problems faced by students. We aim to communicate effectively and support each other to achieve our shared goal of making a positive impact by embodying “selfless service”. </p>
+
+        <h2>Team Members</h2>
+        <div className="team-members-container">
+          {teamMembers.map(member => (
+            <div key={member.name} className="team-member">
+              <img src={member.image} alt={member.name} />
+              <p className="member-name">{member.name}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2>Why Trust Us?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <h3>Contact Us</h3>
+        <div className="contact-us-container">
+          <p>Email: contact@company.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
       </div>
-    </div>
     </main>
-    </div>);
+  </div>);
 }
 
 export default About;

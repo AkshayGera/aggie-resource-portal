@@ -1,6 +1,8 @@
 .text-prompt {
   text-align: center;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .text-prompt select {

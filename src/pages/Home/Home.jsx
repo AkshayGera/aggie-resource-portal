@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Filters from '../../components/Filters/Filters';
 import Header from '../../components/Header/Header';
 import TextPrompt from '../../components/TextPrompt/TextPrompt';
@@ -10,11 +10,15 @@ import Blurb from '../../components/Blurb/Blurb';
 import Navigation from '../../components/Navigation/Navigation';
 import FoodListing from '../../modules/Seeking/Food/FoodListing';
 import AccForm from '../../modules/Providing/Accommodation/AccForm';
-import FoodForm from '../../modules/Providing/Food/FoodForm';
+import FoodFormSection from '../../modules/Providing/Food/FoodFormSection';
 
 function Home() {
   const [service, setService] = useState("seeking");
   const [category, setCategory] = useState("accommodation");
+
+  // useEffect(() => {
+  //   window.location.reload();
+  // }, []);
 
   function handleServiceChange(event){
     setService(event.target.value);
@@ -36,7 +40,7 @@ function Home() {
           </div>
         
        <TextPrompt onServiceChange={handleServiceChange} onCategoryChange={handleCategoryChange}/>
-        {service=='seeking'?category=='accommodation'?<AccListings/>:<FoodListing/>:category=="accommodation"?<AccForm/>:<FoodForm/>}
+        {service=='seeking'?category=='accommodation'?<AccListings/>:<FoodListing/>:category=="accommodation"?<AccForm/>:<FoodFormSection/>}
         
       </main>
     </div>

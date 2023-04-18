@@ -14,9 +14,10 @@ function Listing({ image, title, description, dateFrom, dateTo, gender,type,diet
       <h2>{title}</h2>
       <p>{description}</p>
       {type=="food"?<p>{diet}</p>:<></>}
-      <p>Available From: {moment(dateFrom).format('MMMM Do YYYY')}</p>
-      <p>Available Until: {moment(dateTo).format('MMMM Do YYYY')}</p>
-      {type=="acc"?<p>Gender of Provider: {gender}</p>:<></>}
+      <p><b>Available From</b>: {moment(dateFrom).format('MMMM Do YYYY')}</p>
+      <p><b>Available Until</b>: {moment(dateTo).format('MMMM Do YYYY')}</p>
+      {type=="acc"?<p><b>Gender of Provider</b>: {gender}</p>:<></>}
+      <br/>
       <Button className="request" variant="success">Request {type=="acc"?"Stay":"Food"}</Button>
     </div>
   );
