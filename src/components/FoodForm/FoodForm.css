@@ -49,7 +49,8 @@ span {
 @media only screen and (max-width: 480px) {
   /* Styles for screens smaller than 600px */
   .form-container {
-    margin-left: 0; /* remove left margin */
+    margin-left: 0;
+    width: auto; /* remove left margin */
   }
 
   .form-group{
@@ -63,10 +64,15 @@ span {
   
   input[type="checkbox"] {
     margin-left: 0; /* remove left margin */
+    margin-right: 0px;
   }
   
   .form-group.actions {
     flex-direction: row; /* change back to a row layout */
-    justify-content: space-between; /* space items evenly */
+    justify-content: flex-end; /* space items evenly */
+  }
+
+  span{
+    margin-right: 8px;
   }
 }
