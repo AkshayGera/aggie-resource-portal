@@ -106,7 +106,7 @@ const FoodForm = () => {
                                 checked={formData.dietaryRestrictions.vegetarian}
                                 onChange={handleInputChange}
                             />
-                            <span>Veg</span>
+                            <span>Vegetarian</span>
                         </label>
                         <label>
                             <input
