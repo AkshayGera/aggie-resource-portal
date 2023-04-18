@@ -56,6 +56,14 @@ span {
   .form-group{
     width: 100%;
   }
+  input[type="text"]{
+    max-width: 80%;
+  }
+
+  textarea{
+    max-width: 80%;
+  }
+  
   
   label {
     text-align: left; /* change label text alignment to left */

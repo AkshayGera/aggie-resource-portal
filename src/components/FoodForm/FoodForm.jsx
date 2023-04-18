@@ -133,7 +133,7 @@ const FoodForm = () => {
                 <div className="form-group">
                     <label>Quantity Available:</label>
                     <input
-                        type="number"
+                        type="text"
                         name="quantity"
                         value={formData.quantity}
                         onChange={handleInputChange}
