@@ -51,6 +51,10 @@ span {
   .form-container {
     margin-left: 0; /* remove left margin */
   }
+
+  .form-group{
+    width: 100%;
+  }
   
   label {
     text-align: left; /* change label text alignment to left */
