@@ -1,52 +1,68 @@
 /* FormComponent.css */
 .form-container {
     margin-top: 10px;
-    margin-left:20px;
+    margin-left: 20px;
     display: flex;
-    justify-content: left;
-  }
-  
-  form {
+    flex-direction: column; /* change to a column layout on smaller screens */
+    align-items: flex-start; /* align items to the left */
+}
+
+form {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 0.5rem;
-    width: fit-content;
-  }
-  
-  .form-group {
+/* make the form width 100% to fill the container */
+}
+
+.form-group {
     display: contents;
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
     text-align: right;
     padding-right: 1rem;
+    margin-bottom: 0.5rem; /* add some space between labels on smaller screens */
+}
+
+input[type="checkbox"] {
+    margin-left: 0.5rem;
+}
+
+.form-group.checkbox-group {
+    grid-column: 1 / -1;
+}
+
+.form-group.actions {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row; /* change to a column layout on smaller screens */
+    gap: 0.5rem;
+    justify-content: flex-end; /* align items to the top */
+}
+
+span {
+    margin-left: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+  .form-container {
+    margin-left: 0; /* remove left margin */
+  }
+  
+  label {
+    text-align: left; /* change label text alignment to left */
+    padding-right: 0; /* remove right padding */
   }
   
   input[type="checkbox"] {
-    margin-left: 0.5rem;
-  }
-  
-  .form-group.checkbox-group {
-    grid-column: 1 / -1;
+    margin-left: 0; /* remove left margin */
   }
   
   .form-group.actions {
-    grid-column: 1 / -1;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: flex-end;
+    flex-direction: row; /* change back to a row layout */
+    justify-content: space-between; /* space items evenly */
   }
-  span{
-    margin-left: 4px;
-  }
-
-  @media screen and (max-width: 480px) {
-    .form-container{
-        margin-left: 0px;
-        max-width: 100%;
-    }
-  }
-
-  
+}

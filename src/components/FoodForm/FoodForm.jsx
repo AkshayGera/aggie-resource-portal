@@ -169,8 +169,9 @@ const FoodForm = () => {
               </div>
           
               <div className="form-group actions">
-  <button className='btn btn-success' type="submit">Submit</button>
+  
   <button className='btn btn-secondary' type="button" onClick={handleClear}>Clear</button>
+  <button className='btn btn-success' type="submit">Submit</button>
 </div>
             </form>
           </div>
