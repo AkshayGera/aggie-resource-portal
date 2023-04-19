@@ -9,7 +9,7 @@ import profileimage from '../../components/ProfilePicture/profile-picture.png';
 import Blurb from '../../components/Blurb/Blurb';
 import Navigation from '../../components/Navigation/Navigation';
 import FoodListing from '../../modules/Seeking/Food/FoodListing';
-import AccForm from '../../modules/Providing/Accommodation/AccForm';
+import AccFormSection from '../../modules/Providing/Accommodation/AccFormSection';
 import FoodFormSection from '../../modules/Providing/Food/FoodFormSection';
 
 function Home() {
@@ -40,7 +40,7 @@ function Home() {
           </div>
         
        <TextPrompt onServiceChange={handleServiceChange} onCategoryChange={handleCategoryChange}/>
-        {service=='seeking'?category=='accommodation'?<AccListings/>:<FoodListing/>:category=="accommodation"?<AccForm/>:<FoodFormSection/>}
+        {service=='seeking'?category=='accommodation'?<AccListings/>:<FoodListing/>:category=="accommodation"?<AccFormSection/>:<FoodFormSection/>}
         
       </main>
     </div>

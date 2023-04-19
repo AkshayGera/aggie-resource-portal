@@ -48,7 +48,7 @@ label{
   margin-right: 0.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .form-container {
     justify-content: flex-start;
     align-items: flex-start;
