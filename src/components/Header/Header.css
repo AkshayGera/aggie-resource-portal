@@ -1,59 +1,85 @@
-/* Default styles */
 header {
   display: flex;
-  flex-direction: column; /* Change flex direction to column */
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 5px;
-  background-color: #17a843;
+  background-color: #034f10;
   color: #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-.profile img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Add this line */
+  max-width: 100%; /* Add this line */
 }
 
-h1 {
-  font-size: 2em;
-  padding-top: 5px;
-  margin-bottom: 5px;
+.header-img {
+  max-width: 10%;
+  height: auto;
+  display: block;
+  margin-right: 10px;
 }
 
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .tagline {
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-style: italic;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-top: 0px;
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
-  /* Adjust header padding */
   header {
-    padding: 5px;
-    
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
-  /* Reduce the size of the profile image */
-  .profile img {
-    width: 30px;
-    height: 30px;
+  .header-container {
+    justify-content: center; /* Add this line */
   }
 
-  /* Reduce the font size of the heading */
+  .header-img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-right: 5px;
+  }
+
+  img {
+    margin-right: 5px;
+    width:50%;
+    height:auto;
+  }
+
+  .header-text{
+    margin-top: 10px;
+  }
+
   h1 {
-    font-size: 2em;
-    white-space: nowrap; /* Prevent wrapping */
-    text-overflow: ellipsis; /* Show ellipsis for overflow text */
-    
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: visible;
+   
   }
 
-  /* Reduce the font size of the tagline */
   .tagline {
     font-size: 1em;
-    white-space: nowrap; /* Prevent wrapping */
-    
-    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 10px;
   }
 }

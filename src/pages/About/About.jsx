@@ -49,14 +49,14 @@ function About() {
         <div className="team-members-container">
           {teamMembers.map(member => (
             <div key={member.name} className="team-member">
-              <img src={member.image} alt={member.name} />
+              <img className="memberimg" src={member.image} alt={member.name} />
               <p className="member-name">{member.name}</p>
             </div>
           ))}
         </div>
 
         <h2>Why Trust Us?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Trust Aggie Resource Portal to provide accurate and reliable resources shared by Texas A&M Aggies and locals who embody the value of selfless service and are committed to helping students succeed. Our platform is designed to address real-world problems faced by students and is grounded in our own experiences. Don't hesitate to reach out for any questions or support you may need. We are always here to help our fellow and incoming students.</p>
 
         <h3>Contact Us</h3>
         <div className="contact-us-container">

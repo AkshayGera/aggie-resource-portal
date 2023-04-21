@@ -1,22 +1,20 @@
 import React from 'react';
 import './Header.css';
+import logo from '../../media/Logo_Website_ARP.png';
 
 function Header() {
   return (
     <header>
-    {/* <div className="profile">
-      <img src="profile-icon.png" alt="Profile Icon" />
-      <div className="profile-dropdown">
-        <ul>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
+      <div className="header-container">
+        <img className='header-img' src={logo} alt="Logo" />
+        <div className="header-text">
+          <h1>Aggie Resource Portal</h1>
+          <div className='taglinecontainer'><p className="tagline">Aggies Serving Aggies</p></div>
+        </div>
       </div>
-    </div> */}
-    <h1>Aggie Resource Portal</h1>
-    <p className="tagline">Aggies Serving Aggies</p>
-  </header>
+    </header>
   );
 }
+
 
 export default Header;
