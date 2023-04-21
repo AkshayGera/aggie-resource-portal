@@ -2,12 +2,17 @@ import React,{useState, useEffect} from "react";
 import Filters from "../../../components/Filters/Filters";
 import Listings from "../../../components/Listings/Listings";
 import moment from "moment";
+import house1 from '../../../media/house1.jpg';
+import apt from '../../../media/apt.png';
+import couch from '../../../media/couch.png';
+import house2 from '../../../media/house2.jpg';
+import house3 from '../../../media/house3.jpeg'
 
 const AccListing = (props) => {
 
     const accommodationListings = [
         {
-          image: 1,
+          image: house1,
           title: 'Cozy Apartment in the City Center',
           description: 'This spacious and comfortable apartment is located in the heart of the city, within walking distance of all the main attractions and amenities.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),
@@ -16,7 +21,7 @@ const AccListing = (props) => {
           type:'acc'
         },
         {
-          image: 2,
+          image: apt,
           title: 'Charming House in the Countryside',
           description: 'Escape to the peace and quiet of the countryside in this lovely house with stunning views and a beautiful garden.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),
@@ -25,7 +30,7 @@ const AccListing = (props) => {
           type:'acc'
         },
         {
-          image: 3,
+          image: couch,
           title: 'Luxury Villa with Private Pool',
           description: 'Indulge in a luxurious and relaxing vacation in this stunning villa with a private pool and all the modern amenities you need.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),
@@ -34,7 +39,7 @@ const AccListing = (props) => {
           type:'acc'
         },
         {
-          image: 4,
+          image: house2,
           title: 'Quaint Cottage by the Sea',
           description: 'Enjoy a peaceful and idyllic stay in this charming cottage by the sea, surrounded by beautiful scenery and the sound of the waves.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),
@@ -43,7 +48,7 @@ const AccListing = (props) => {
           type:'acc'
         },
         {
-          image: 5,
+          image: house3,
           title: 'Modern Loft in the Trendy Neighborhood',
           description: 'Experience the vibrant and creative atmosphere of the city in this stylish loft located in the heart of the trendiest neighborhood.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),

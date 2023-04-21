@@ -27,7 +27,7 @@ function ProfilePicture({ image }) {
       </div>
       <div className="button-container">
        
-        <FaCog className="settings-icon"  onClick={handleShowModal}/>
+        <FaCog style={{ color: "#198754" }} className="settings-icon"  onClick={handleShowModal}/>
         <FaSignOutAlt className="logout-icon"  onClick={handleShowModal}/>
         <UnderConstructionModal show={showModal} onClose={handleCloseModal} />
       </div>

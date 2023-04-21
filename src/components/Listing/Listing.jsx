@@ -10,7 +10,7 @@ function Listing({ image, title, description, dateFrom, dateTo, gender,type,diet
 
   return (
     <div className="listing">
-      <img src={type=="acc"?image1:foodimage1} alt={`${title} Image`} />
+      <img src={image} alt={`${title} Image`} />
       <h2>{title}</h2>
       <p>{description}</p>
       {type=="food"?<p>{diet}</p>:<></>}
