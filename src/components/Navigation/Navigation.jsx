@@ -1,8 +1,11 @@
 import React,{useState} from "react";
 import "./Navigation.css"; // import css file for styling
 import { Link, useLocation, NavLink } from 'react-router-dom';
+import UnderConstructionModal from '../UnderConstructionModal/UnderConstructionModal';
+import { Button } from "react-bootstrap";
 
 function Navigation() {
+
  
   const navLinks = [
     {
@@ -15,8 +18,9 @@ function Navigation() {
     },
     {
       label: 'Help',
-      to: '/help',
-    },
+      to:'/help',
+     
+    }
   ];
   const location = useLocation();
   const isNavLinkActive = (link) => {
@@ -35,6 +39,7 @@ function Navigation() {
               activeClassName="active"
               className="home-button"
               isActive={() => isNavLinkActive(link)}
+             
             >
               {link.label}
             </NavLink>
@@ -42,7 +47,6 @@ function Navigation() {
         ))}
       </ul>
     </nav>
-
   </>
   );
 }

@@ -1,22 +1,23 @@
 import React from 'react';
-import './UnderConstructionModal.css';
+import { Modal, Button } from 'react-bootstrap';
 
 function UnderConstructionModal(props) {
+  const handleClose = () => {
+    props.onClose();
+  };
+
   return (
-    <div className="modal-wrapper">
-      <div className="modal">
-        <div className="modal-header">
-          <img src={props.logo} alt="logo" className="modal-logo" />
-          <button className="close-button" onClick={props.onClose}>X</button>
-        </div>
-        <div className="modal-body">
-          <p>This region is under construction</p>
-        </div>
-        <div className="modal-footer">
-          <button className="back-button" onClick={props.onClose}>Close</button>
-        </div>
-      </div>
-    </div>
+    <Modal show={props.show} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>Feature Under Construction</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>This feature is currently under construction. Please check back later.</Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleClose}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
   );
 }
 

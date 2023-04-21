@@ -1,8 +1,21 @@
-import React from "react";
+import React,{useState} from "react";
 import { FaCog, FaSignOutAlt } from "react-icons/fa";
 import "./ProfilePicture.css";
+import UnderConstructionModal from '../UnderConstructionModal/UnderConstructionModal';
+import { Button } from "react-bootstrap";
 
 function ProfilePicture({ image }) {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+ 
   return (
     <div className="profile-container">
       <div className="profile-picture-container">
@@ -13,8 +26,10 @@ function ProfilePicture({ image }) {
         />
       </div>
       <div className="button-container">
-        <FaCog className="settings-icon" />
-        <FaSignOutAlt className="logout-icon" />
+       
+        <FaCog className="settings-icon"  onClick={handleShowModal}/>
+        <FaSignOutAlt className="logout-icon"  onClick={handleShowModal}/>
+        <UnderConstructionModal show={showModal} onClose={handleCloseModal} />
       </div>
     </div>
   );
