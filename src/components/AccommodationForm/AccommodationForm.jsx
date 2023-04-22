@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import './AccommodationForm.css';
+import SubmissionModal from '../SubmissionModal/SubmissionModal';
 
 const AccommodationForm = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   const [formData, setFormData] = useState({
     dateFrom: '',
     dateTo: '',
@@ -100,9 +110,10 @@ const AccommodationForm = () => {
           <button className="btn btn-secondary" type="button" onClick={handleClear}>
             Clear
           </button>
-          <button className="btn btn-success" type="submit">
+          <button className="btn btn-success" type="button" onClick={handleShowModal}>
             Submit
           </button>
+          <SubmissionModal show={showModal} onClose={handleCloseModal} />
         </div>
       </form>
     </div>

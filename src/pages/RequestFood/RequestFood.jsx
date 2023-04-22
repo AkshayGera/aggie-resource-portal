@@ -9,7 +9,7 @@ import food1 from '../../media/Food1.jpeg';
 import './RequestFood.css';
 import { useLocation } from "react-router-dom";
 
-function RequestStay(){
+function RequestFood(){
     const foodListing = { "image": food1, "title": "Leftover pizza", "description": "Two slices of pepperoni pizza, still in good condition", "dateFrom": "2023-04-15", "dateTo": "2023-04-16", "type": "food", "diet": "none" };
     //  const { prop1 } = props.location.state;
     const location = useLocation();
@@ -36,4 +36,4 @@ function RequestStay(){
           </div>);
 }
 
-export default RequestStay;
+export default RequestFood;
