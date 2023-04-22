@@ -50,12 +50,18 @@ function RequestStayForm() {
           <textarea className="form-textarea"></textarea>
         </div>
       </div>
-      <div className="form-row">
-        <button type="reset" className="form-button">Clear Form</button>
-      </div>
-      <div className="form-row">
-        <button type="button" className="form-button" onClick={handleShowModal}>Submit</button>
-      </div>
+      <div className="form-group actions">
+          <button className="btn btn-secondary" type="reset">
+            Clear
+          </button>
+          <button className="btn btn-success" type="button" onClick={handleShowModal}>
+            Submit
+          </button>
+          <SubmissionModal show={showModal} onClose={handleCloseModal} />
+        </div>
+      {/* <div className="form-row">
+        
+      </div> */}
       <SubmissionModal show={showModal} onClose={handleCloseModal} />
     </form>
   );

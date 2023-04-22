@@ -10,6 +10,7 @@ const AccommodationForm = () => {
   };
 
   const handleCloseModal = () => {
+    handleClear();
     setShowModal(false);
   };
   const [formData, setFormData] = useState({
