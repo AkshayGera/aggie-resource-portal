@@ -5,6 +5,8 @@ import './style.css';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Help from './pages/Help/Help';
+import RequestStay from './pages/RequestStay/RequestStay';
+import RequestFood from './pages/RequestFood/RequestFood';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/" element={<RemountWrapper component={Home} />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/reqstay" element = {<RequestStay/>} />
+          <Route path="/reqfood" element = {<RequestFood/>} />
         </Routes>
       </Router>
     </div>

@@ -1,0 +1,32 @@
+.details {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .details h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .details p {
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+  
+  .request {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+  
