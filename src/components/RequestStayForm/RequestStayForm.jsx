@@ -57,12 +57,12 @@ function RequestStayForm() {
           <button className="btn btn-success" type="button" onClick={handleShowModal}>
             Submit
           </button>
-          <SubmissionModal show={showModal} onClose={handleCloseModal} />
+          <SubmissionModal gohome={true}  show={showModal} onClose={handleCloseModal} />
         </div>
       {/* <div className="form-row">
         
       </div> */}
-      <SubmissionModal show={showModal} onClose={handleCloseModal} />
+     
     </form>
   );
 }

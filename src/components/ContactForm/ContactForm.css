@@ -1,0 +1,36 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  
+  input,
+  textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"]{
+    margin-left: 5px;
+  }
+
+  .form-actions{
+    display: flex ;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    flex-direction: row;
+    align-items: right; 
+  }
+  
+
+  

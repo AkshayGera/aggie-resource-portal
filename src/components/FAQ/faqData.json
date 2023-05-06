@@ -1,0 +1,23 @@
+[
+    {
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces."
+    },
+    {
+      "question": "How does React work?",
+      "answer": "React creates a virtual DOM and updates the actual DOM only when necessary, which makes it more efficient."
+    },
+    {
+      "question": "What are the advantages of using React?",
+      "answer": "React is fast, scalable, and easy to learn. It also has a large and active community, which means there are plenty of resources available."
+    },
+    {
+      "question": "How can I get started with React?",
+      "answer": "You can start by reading the official documentation and trying out some of the tutorials and examples. There are also many online courses and books available."
+    },
+    {
+      "question": "What are some popular React-based frameworks?",
+      "answer": "Some popular React-based frameworks include Next.js, Gatsby, and React Native."
+    }
+  ]
+  

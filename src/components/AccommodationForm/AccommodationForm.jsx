@@ -3,6 +3,7 @@ import './AccommodationForm.css';
 import SubmissionModal from '../SubmissionModal/SubmissionModal';
 
 const AccommodationForm = () => {
+  const text = "Thank you for submitting a listing, we will be getting in touch with you shortly via email/phone to verify the listing."
   const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => {
@@ -114,7 +115,7 @@ const AccommodationForm = () => {
           <button className="btn btn-success" type="button" onClick={handleShowModal}>
             Submit
           </button>
-          <SubmissionModal show={showModal} onClose={handleCloseModal} />
+          <SubmissionModal gohome={true} text={text} show={showModal} onClose={handleCloseModal} />
         </div>
       </form>
     </div>

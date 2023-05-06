@@ -1,0 +1,30 @@
+.faq-container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+ 
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: justify;
+  }
+  
+  .faq-question i {
+    margin-left: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  

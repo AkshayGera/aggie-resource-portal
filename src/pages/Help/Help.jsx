@@ -1,9 +1,11 @@
 import React from "react";
 import ProfilePicture from '../../components/ProfilePicture/ProfilePicture';
 import profileimage from '../../components/ProfilePicture/profile-picture.png';
-import Blurb from '../../components/Blurb/Blurb';
+import { Container,Row,Col } from "react-bootstrap";
 import Navigation from '../../components/Navigation/Navigation';
 import './Help.css'
+import FAQ from '../../components/FAQ/FAQ';
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 function Help() {
     return (<div>
@@ -12,11 +14,16 @@ function Help() {
                 <Navigation />
                 <ProfilePicture image={profileimage} className="topItem" />
             </div>
-            <div className="page">
-                <div className="content">
-                    <h4>This page is under construction. Please check back later.</h4>
-                </div>
-            </div>
+            <Container >
+            <Row className="content">
+                <Col md={6} xs={{ order: 2 }}>
+                <FAQ />
+                </Col>
+                <Col md={6} xs={{ order: 1 }}>
+                <ContactForm />
+                </Col>
+            </Row>
+        </Container>
         </main>
     </div>)
 }

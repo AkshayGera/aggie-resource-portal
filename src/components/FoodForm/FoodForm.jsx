@@ -5,7 +5,7 @@ import SubmissionModal from '../SubmissionModal/SubmissionModal';
 
 const FoodForm = () => {
     const [showModal, setShowModal] = useState(false);
-
+    const text = "Thank you for submitting a listing, we will be getting in touch with you shortly via email/phone to verify the listing."
   const handleShowModal = () => {
     setShowModal(true);
   };
@@ -183,7 +183,7 @@ const FoodForm = () => {
 
                     <button className='btn btn-secondary' type="button" onClick={handleClear}>Clear</button>
                     <button className='btn btn-success' type="button" onClick={handleShowModal}>Submit</button>
-                    <SubmissionModal show={showModal} onClose={handleCloseModal} />
+                    <SubmissionModal text={text} show={showModal} onClose={handleCloseModal} />
                 </div>
             </form>
         </div>
