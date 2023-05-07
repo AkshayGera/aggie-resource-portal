@@ -21,7 +21,7 @@ function FAQ() {
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleQuestion(index)}>
             {item.question}
-            {expanded[index] ? <FaMinusSquare/> : <FaPlusSquare/>}
+            {expanded[index] ? <FaMinusSquare style={{color:"#198754"}}/> : <FaPlusSquare style={{color:"#198754"}}/>}
           </div>
           {expanded[index] && <div className="faq-answer">{item.answer}</div>}
         </div>
