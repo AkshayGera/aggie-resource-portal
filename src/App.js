@@ -11,9 +11,11 @@ import RequestFood from './pages/RequestFood/RequestFood';
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Router>
+      <Header />
         <Routes>
+        
           <Route path="/" element={<RemountWrapper component={Home} />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
