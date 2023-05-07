@@ -19,3 +19,50 @@
     color: #333333;
   }
   
+  .tick-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .tick-text {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .tooltip:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+  }
+  
+  .tooltip-text {
+    display: block;
+  }
+  
+  .tick-container:hover .tooltip {
+    opacity: 1;
+  }
+  

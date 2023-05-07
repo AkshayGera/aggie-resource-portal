@@ -8,16 +8,13 @@
       "answer": "There is a sentence completion text prompt on the home page in the center which can be set to seeking/providing food/accommodation"
     },
     {
-      "question": "What are the advantages of using React?",
-      "answer": "React is fast, scalable, and easy to learn. It also has a large and active community, which means there are plenty of resources available."
+      "question": "What does the verified label on a posting mean?",
+      "answer": "The verified label on the posting means that the posting has been verified by our team for authenticity. Safety is our paramount concern which is why we take these verifications seriously."
     },
     {
-      "question": "How can I get started with React?",
-      "answer": "You can start by reading the official documentation and trying out some of the tutorials and examples. There are also many online courses and books available."
-    },
-    {
-      "question": "What are some popular React-based frameworks?",
-      "answer": "Some popular React-based frameworks include Next.js, Gatsby, and React Native."
+      "question": "How can I put in a request for a resource",
+      "answer": "Each listing has a request resource (Food or Stay) button that can be clicked and will lead to a form that can be filled to put in request."
     }
+    
   ]
   

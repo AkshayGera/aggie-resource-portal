@@ -18,7 +18,7 @@ function ProfilePicture({ image }) {
  
   return (
     <div className="profile-container">
-      <div className="profile-picture-container">
+      {/* <div className="profile-picture-container">
         <img
           src={image}
           alt="Profile Picture"
@@ -30,7 +30,7 @@ function ProfilePicture({ image }) {
         <FaCog style={{ color: "#198754" }} className="settings-icon"  onClick={handleShowModal}/>
         <FaSignOutAlt className="logout-icon"  onClick={handleShowModal}/>
         <UnderConstructionModal show={showModal} onClose={handleCloseModal} />
-      </div>
+      </div> */}
     </div>
   );
 }
