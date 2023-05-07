@@ -12,7 +12,7 @@ const AccListing = (props) => {
 
     const accommodationListings = [
         {
-          image: house1,
+          image: apt,
           title: 'Cozy Apartment in the City Center',
           description: 'This spacious and comfortable apartment is located in the heart of the city, within walking distance of all the main attractions and amenities.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),
@@ -21,7 +21,7 @@ const AccListing = (props) => {
           type:'acc'
         },
         {
-          image: apt,
+          image: house1,
           title: 'Charming House in the Countryside',
           description: 'Escape to the peace and quiet of the countryside in this lovely house with stunning views and a beautiful garden.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),
@@ -31,8 +31,8 @@ const AccListing = (props) => {
         },
         {
           image: couch,
-          title: 'Luxury Villa with Private Pool',
-          description: 'Indulge in a luxurious and relaxing vacation in this stunning villa with a private pool and all the modern amenities you need.',
+          title: 'As Single couch available in a cozy apartment',
+          description: 'Perfect for crashing for a night or two, this couch is available if you are on the go and need a place quickly.',
           dateFrom: new Date('2022-03-28T10:00:00Z'),
           dateTo: new Date('2022-04-01T10:00:00Z'),
           gender: 'male',
