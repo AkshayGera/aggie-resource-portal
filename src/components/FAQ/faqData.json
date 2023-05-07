@@ -1,11 +1,11 @@
 [
     {
-      "question": "What is React?",
-      "answer": "React is a JavaScript library for building user interfaces."
+      "question": "What is this website about?",
+      "answer": "This website helps aggies find resources(Food & Shelter) that are being shared by other aggies!"
     },
     {
-      "question": "How does React work?",
-      "answer": "React creates a virtual DOM and updates the actual DOM only when necessary, which makes it more efficient."
+      "question": "How do I navigate through resources?",
+      "answer": "There is a sentence completion text prompt on the home page in the center which can be set to seeking/providing food/accommodation"
     },
     {
       "question": "What are the advantages of using React?",

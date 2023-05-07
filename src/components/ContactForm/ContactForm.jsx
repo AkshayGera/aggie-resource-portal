@@ -1,80 +1,111 @@
 import React, { useState } from "react";
-import './ContactForm.css'
+import "./ContactForm.css";
 import SubmissionModal from "../SubmissionModal/SubmissionModal";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [category, setCategory] = useState("");
   const [showModal, setShowModal] = useState(false);
-
+  const text =
+    "Thank you for contacting us, we will get back to you as soon as possible.";
   const handleShowModal = () => {
     setShowModal(true);
   };
 
   const handleCloseModal = () => {
+    handleClear();
     setShowModal(false);
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    category: "",
+    message: "",
+  });
 
-    // add your logic for submitting the form data to a server or database here
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+  };
+
+  const handleClear = () => {
+    setFormData({
+      name: "",
+      email: "",
+      category: "",
+      message: "",
+    });
   };
 
   return (
-    <div>
-      <h2>Contact Us</h2>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        <label htmlFor="category">Category of Problem:</label>
-        <select
-          id="category"
-          name="category"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          required
-        >
-          <option value="">Select a Category</option>
-          <option value="website">Report a problem with the website</option>
-          <option value="listing">Report illegitimate listing</option>
-          <option value="abuse">Report abuse</option>
-          <option value="other">Other</option>
-        </select>
-
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        ></textarea>
-        <div className="form-actions">
-          <button className='btn btn-secondary' type="button" >Clear</button>
-          <button className="btn btn-success" onClick={handleShowModal} type="submit">Send</button>
-          <SubmissionModal gohome={false} text={"Thank you for submitting a response, we will get in touch with you shortly!"} show={showModal} onClose={handleCloseModal} />
+    <div className="form-container">
+      <h1>Contact Us</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+            required
+          />
         </div>
 
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="category">Category of Problem:</label>
+          <select
+            id="category"
+            name="category"
+            value={formData.category}
+            onChange={handleInputChange}
+            required
+          >
+            <option value="">Select a Category</option>
+            <option value="website">Report a problem with the website</option>
+            <option value="listing">Report illegitimate listing</option>
+            <option value="abuse">Report abuse</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
+            required
+          ></textarea>
+        </div>
+
+        <div className="form-group actions">
+          <button className="btn btn-secondary" type="button" onClick={handleClear}>
+            Clear
+          </button>
+          <button className="btn btn-success" type="button" onClick={handleShowModal}>
+            Submit
+          </button>
+          <SubmissionModal text={text} show={showModal} onClose={handleCloseModal} />
+        </div>
       </form>
     </div>
   );

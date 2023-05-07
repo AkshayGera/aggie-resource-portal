@@ -5,6 +5,7 @@ import OldListing from "../../../components/OldListing/OldListing";
 import house1 from '../../../media/house1.jpg';
 import house2 from '../../../media/house2.jpg';
 import house3 from '../../../media/house3.jpeg';
+import './AccFormSection.css'
 
 function AccForm(){
     const accListings = [{

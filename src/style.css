@@ -119,5 +119,9 @@ main {
     h1 {
         font-size: 1.8em;
     }
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 }

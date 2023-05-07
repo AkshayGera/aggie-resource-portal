@@ -16,11 +16,11 @@ function Help() {
             </div>
             <Container >
             <Row className="content">
-                <Col md={6} xs={{ order: 2 }}>
-                <FAQ />
-                </Col>
-                <Col md={6} xs={{ order: 1 }}>
+                <Col>
                 <ContactForm />
+                </Col>
+                <Col className="faq">
+                <FAQ />
                 </Col>
             </Row>
         </Container>
